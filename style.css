@@ -1,0 +1,26 @@
+h1{
+	color: white;
+	font:arial;
+	font-size:30px;
+	font-family: Arial;
+	background-color: #14141f;
+	padding: 10px;
+}
+
+h2{
+	color: black;
+	font:arial;
+	font-size:26px;
+	font-family: Arial;
+}
+
+body{
+	background-image: url("background.jpg");
+	background-size: cover;
+	padding-left:10%;
+	padding-right: 10%;
+}
+
+p{
+	font-size: 20px;
+}
