@@ -9,8 +9,8 @@
 
 html,
 body{
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	font-family: 'Lato','Arial',sans-serif;
 	font-size: 20px;
 	font-weight: 300;
@@ -129,17 +129,51 @@ h3{
 /* HEADER */
 /*-----------------------------------------------------*/
 
-header{
-	background-size: cover;
-	background-position: center;
-	height: 100px;
-	background-attachment: fixed;
-}
 
 
 /*  Main navi    */
 
+nav{
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+ 
+    background-color: white;
+}
+.main-nav{
+	   float: right;
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	color:black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 2px solid #e67e22;
+}
+
 /*About*/
+.section-about{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/code.png");
+	background-color: white;
+	background-attachment: fixed;
+	color: white;
+}
+
 .profilephoto{
 	width: 150px;
 	border:1px solid #cf6d17;
@@ -148,8 +182,43 @@ header{
 }
 
 /* My Websites */
+.site-link{
+	
+}
+
+.site-link:hover{
+	
+}
+
 .site-image{
 	width: 100%;
+	height: auto;
+	transition: transform 0.5s, opacity 0.5s;
+	opacity: 0.8;
+}
+
+.site-image:hover{
+	transform: scale(1.03);
+	opacity: 1;
+}
+
+
+
+/*Employment History*/
+.my-links,
+.my-work{
+	background-color: #f4f4f4;
+}
+
+
+/*Academic record*/
+.record-image{
+	width: 100%;
+}
+
+/*links*/
+.link-img{
+	width: 50%;
 }
 
 /*------FOOTER------*/
